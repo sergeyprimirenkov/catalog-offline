@@ -13,23 +13,23 @@
 
 @font-face {
   font-family: "Montserrat";
-  src: url("/font/Montserrat-Regular.woff2") format("woff2"),
-    url("/font/Montserrat-Regular.woff") format("woff");
+  src: url("/catalog-offline/font/Montserrat-Regular.woff2") format("woff2"),
+    url("/catalog-offline/font/Montserrat-Regular.woff") format("woff");
   font-weight: 400;
   font-display: fallback;
 }
 
 @font-face {
   font-family: "Montserrat";
-  src: url("/font/Montserrat-Bold.woff2") format("woff2"),
-    url("/font/Montserrat-Bold.woff") format("woff");
+  src: url("/catalog-offline/font/Montserrat-Bold.woff2") format("woff2"),
+    url("/catalog-offline/font/Montserrat-Bold.woff") format("woff");
   font-weight: 700;
 }
 
 @font-face {
   font-family: "Montserrat";
-  src: url("/font/Montserrat-ExtraBold.woff2") format("woff2"),
-    url("/font/Montserrat-ExtraBold.woff") format("woff");
+  src: url("/catalog-offline/font/Montserrat-ExtraBold.woff2") format("woff2"),
+    url("/catalog-offline/font/Montserrat-ExtraBold.woff") format("woff");
   font-weight: 900;
 }
 
@@ -182,7 +182,7 @@ a {
   width: 100%;
   height: 100%;
   position: absolute;
-  background-image: url("/assets/youtube.svg");
+  background-image: url("/catalog-offline/assets/youtube.svg");
   background-size: 35%;
   background-position: center;
   background-repeat: no-repeat;
