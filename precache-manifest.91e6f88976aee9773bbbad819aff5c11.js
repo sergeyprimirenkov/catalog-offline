@@ -4,48 +4,24 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "assets/htc.png"
   },
   {
-    "revision": "4c3abb991317d58c4d1d716654b88289",
+    "revision": "4be846346308cabb81259b96f4bfe044",
     "url": "assets/icons/android-chrome-192x192.png"
   },
   {
-    "revision": "9ed66c1a7491d0fc6995a93ab21977b7",
+    "revision": "2b353b74332fbd26dc61f53bff4052ad",
     "url": "assets/icons/android-chrome-512x512.png"
   },
   {
-    "revision": "d4f9ab5317242754b7188ffb403ccfd9",
-    "url": "assets/icons/android-chrome-512x512.png.png"
-  },
-  {
-    "revision": "aeebc25eeeb26b380c49900de28cd1a4",
-    "url": "assets/icons/android-chrome-maskable-192x192.png"
-  },
-  {
-    "revision": "d4f9ab5317242754b7188ffb403ccfd9",
-    "url": "assets/icons/android-chrome-maskable-512x512.png.png"
-  },
-  {
-    "revision": "9bd08120b402cba38b89bf3161935243",
-    "url": "assets/icons/apple-touch-icon-152x152.png"
-  },
-  {
-    "revision": "9c01338ef35022782882a4899c7f78b1",
+    "revision": "6b3284032a63131378ead38557df5df5",
     "url": "assets/icons/apple-touch-icon.png"
   },
   {
-    "revision": "70048b5ed24ebc0365a58cdf03323159",
+    "revision": "9f347ac90f0b8a89c8d13e22facd890a",
     "url": "assets/icons/favicon-16x16.png"
   },
   {
-    "revision": "277f50b149e17cc2091f8ded1622d43a",
+    "revision": "d8de1e7b0a302805f65bfd906fb7a831",
     "url": "assets/icons/favicon-32x32.png"
-  },
-  {
-    "revision": "3cd201f2f6beb7fabcddcbc2a73d00b6",
-    "url": "assets/icons/msapplication-icon-144x144.png"
-  },
-  {
-    "revision": "45d018b81ab75dd354e1b550a095d3e7",
-    "url": "assets/icons/mstile-150x150.png"
   },
   {
     "revision": "02b5efb2f5429ae2c7836469be740690",
@@ -80,8 +56,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "assets/youtube.svg"
   },
   {
-    "revision": "15bf22de6bb62aea9368",
-    "url": "css/app.ce2e3ca1.css"
+    "revision": "6d86c6fdb9e293ecd9e0",
+    "url": "css/app.f4c7b01e.css"
   },
   {
     "revision": "67baafe44e5b671c72ac",
@@ -5268,7 +5244,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "images/zomday/thumbnail.jpg"
   },
   {
-    "revision": "08276f512c91edbde724880bccd61a8f",
+    "revision": "12106f2836d8f7191838bd2b58a5c6f2",
     "url": "index.html"
   },
   {
@@ -5276,8 +5252,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "js/about.de309fca.js"
   },
   {
-    "revision": "15bf22de6bb62aea9368",
-    "url": "js/app.54d2af4e.js"
+    "revision": "6d86c6fdb9e293ecd9e0",
+    "url": "js/app.9d908cb2.js"
   },
   {
     "revision": "67baafe44e5b671c72ac",
@@ -5296,7 +5272,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "js/youtube.iframe.api.js"
   },
   {
-    "revision": "711175b26810d925a3e03c7d9ffc4c54",
+    "revision": "8010cdc110136a534c81b343d11c293b",
     "url": "manifest.json"
   },
   {
