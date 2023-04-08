@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/catalog-offline/precache-manifest.d28d7162df7766905c5294916f8be891.js"
+  "/catalog-offline/precache-manifest.5f483a1c294ae73f494052a616a56245.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "driv3r"});
