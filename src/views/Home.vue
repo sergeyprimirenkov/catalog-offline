@@ -86,9 +86,9 @@
                   :style="{
                     'background-image':
                       `linear-gradient(180deg,
-                                                                                                                                                                                                                                                                                                 rgba(0, 0, 0, 0) 0%,
-                                                                                                                                                                                                                                                                                                 rgba(0, 0, 0, 0.35) 75%,
-                                                                                                                                                                                                                                                                                                 rgba(0, 0, 0, 0.65) 100%), ` +
+                                                                                                                                                                                                                                                                                                                                                                                 rgba(0, 0, 0, 0) 0%,
+                                                                                                                                                                                                                                                                                                                                                                                 rgba(0, 0, 0, 0.35) 75%,
+                                                                                                                                                                                                                                                                                                                                                                                 rgba(0, 0, 0, 0.65) 100%), ` +
                       'url(' +
                       game.thumbnail +
                       ')',
@@ -114,8 +114,10 @@
                 </router-link>
               </div>
             </div>
-            <div v-else>
-              По вашему запросу ничего не найдено 🔎
+            <div v-else class="wrapper--empty">
+              <img :src="this.publicPath + 'assets/loupe.png'" alt="Лупа" width="150" height="150" />
+              <p class="empty-start">По вашему запросу ничего не найдено</p>
+              <p>Есть и другие игры, тоже интересные</p>
             </div>
           </vk-tabs-item>
           <vk-tabs-item v-bind:title="
@@ -131,9 +133,9 @@
                   :style="{
                     'background-image':
                       `linear-gradient(180deg,
-                                                                                                                                                                                                                                                                                                 rgba(0, 0, 0, 0) 0%,
-                                                                                                                                                                                                                                                                                                 rgba(0, 0, 0, 0.35) 75%,
-                                                                                                                                                                                                                                                                                                 rgba(0, 0, 0, 0.65) 100%), ` +
+                                                                                                                                                                                                                                                                                                                                                                                 rgba(0, 0, 0, 0) 0%,
+                                                                                                                                                                                                                                                                                                                                                                                 rgba(0, 0, 0, 0.35) 75%,
+                                                                                                                                                                                                                                                                                                                                                                                 rgba(0, 0, 0, 0.65) 100%), ` +
                       'url(' +
                       game.thumbnail +
                       ')',
@@ -159,8 +161,10 @@
                 </router-link>
               </div>
             </div>
-            <div v-else>
-              По вашему запросу ничего не найдено 🔎
+            <div v-else class="wrapper--empty">
+              <img :src="this.publicPath + 'assets/loupe.png'" alt="Лупа" width="150" height="150" />
+              <p class="empty-start">По вашему запросу ничего не найдено</p>
+              <p>Есть и другие игры, тоже интересные</p>
             </div>
           </vk-tabs-item>
           <vk-tabs-item v-bind:title="
@@ -204,31 +208,32 @@
                 </router-link>
               </div>
             </div>
-            <div v-else>
-              По вашему запросу ничего не найдено 🔎
+            <div v-else class="wrapper--empty">
+              <img :src="this.publicPath + 'assets/loupe.png'" alt="Лупа" width="150" height="150" />
+              <p class="empty-start">По вашему запросу ничего не найдено</p>
+              <p>Есть и другие игры, тоже интересные</p>
             </div>
           </vk-tabs-item>
           <vk-tabs-item v-bind:title="'МОИ ' + '(' + wishlistIds.length + ')'">
             <div v-if="isEmpty" class="wrapper wrapper--empty">
-              <svg viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M139.407 114.647L118.147 102.344V67.6853C118.147 61.4916 114.818 55.726 109.465 52.6323L79.5062 35.3012L79.5 10.714L136.528 43.6855C138.309 44.7105 139.407 46.6292 139.407 48.6855V114.647ZM106.554 133.582L85.2933 121.088L85.2995 86.6851C85.2933 80.4914 81.9708 74.7196 76.6174 71.6259L46.6529 54.2948V29.6981L103.671 62.6853C105.456 63.7103 106.554 65.6228 106.554 67.6853V133.582ZM22.4753 116.31C20.7002 115.279 19.599 113.366 19.5927 111.31L19.599 52.0542L70.8242 81.6789C72.6024 82.7101 73.7068 84.6226 73.7005 86.6851L73.7068 145.935L22.4753 116.31ZM150.994 48.6917C150.994 42.4918 147.671 36.7231 142.318 33.6294L88.1821 2.32029C82.8225 -0.77343 76.1775 -0.77343 70.8242 2.32029L16.6821 33.6294C11.3287 36.7231 8.00624 42.498 8 48.6855L8.00624 111.304C8.00624 117.507 11.3381 123.272 16.6821 126.366L70.8242 157.675C73.5009 159.219 76.4989 159.994 79.5 160C82.5043 159.994 85.5054 159.219 88.1758 157.675L142.318 126.357C147.671 123.272 150.994 117.497 151 111.304L150.994 48.6917Z"
-                  fill="#06021a"></path>
-              </svg>
-              <p>Список избранного пуст</p>
+              <img :src="this.publicPath + 'assets/heart.png'" alt="Сердце" width="150" height="150" />
+              <p class="empty-start">Список избранного пуст</p>
+              <p class="empty-offer">Начните добавлять любимые игры, чтобы не потерять</p>
             </div>
-            <div v-else-if="!isEmpty && showLikedGames.length == 0">
-              По вашему запросу ничего не найдено 🔎
+            <div v-else-if="!isEmpty && showLikedGames.length == 0" class="wrapper--empty">
+              <img :src="this.publicPath + 'assets/loupe.png'" alt="Лупа" width="150" height="150" />
+              <p class="empty-start">По вашему запросу ничего не найдено</p>
+              <p>Есть и другие игры, тоже интересные</p>
             </div>
             <div v-else class="wrapper">
               <div class="item" v-for="game in showLikedGames" :key="game.id">
                 <router-link tag="div" :to="{ name: 'Id', params: { id: game.id } }" class="card" title="Перейти к игре"
                   :style="{
-                    'background-image':
+  'background-image':
                       `linear-gradient(180deg,
-                                                                                                                                                                                                                                                                                                 rgba(0, 0, 0, 0) 0%,
-                                                                                                                                                                                                                                                                                                 rgba(0, 0, 0, 0.35) 75%,
-                                                                                                                                                                                                                                                                                                 rgba(0, 0, 0, 0.65) 100%), ` +
+                                                                                                                                                                                                                                                                                                                                                                                 rgba(0, 0, 0, 0) 0%,
+                                                                                                                                                                                                                                                                                                                                                                                 rgba(0, 0, 0, 0.35) 75%,
+                                                                                                                                                                                                                                                                                                                                                                                 rgba(0, 0, 0, 0.65) 100%), ` +
                       'url(' +
                       game.thumbnail +
                       ')',
@@ -336,6 +341,9 @@ export default {
     putLike: function (event, gameId) {
       this.gameId = gameId;
       this.liked = !this.liked;
+      if (this.liked) {
+        navigator.vibrate(100);
+      }
     },
     closeSearchGame: function () {
       if (this.search == "") {

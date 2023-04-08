@@ -119,6 +119,10 @@ a {
   color: white;
 }
 
+p {
+  line-height: 1.5;
+}
+
 .swiper {
   width: 100%;
   height: auto;
@@ -593,18 +597,24 @@ a.back-home:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   /* transform: translateY(50%); */
 }
 
 .wrapper--empty svg {
-  width: 200px;
+  width: 322px;
   /* margin: auto; */
 }
 
-.wrapper--empty p {
+p.empty-start {
   font-size: 18px;
   font-weight: 700;
   color: #ffffff;
+}
+
+p.empty-start,
+p.empty-offer {
+  margin: 0;
 }
 
 .photo {
